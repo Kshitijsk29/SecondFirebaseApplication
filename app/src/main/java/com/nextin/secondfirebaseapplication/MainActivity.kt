@@ -9,7 +9,6 @@ import com.google.firebase.Firebase
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.core.Tag
 import com.google.firebase.database.database
 import com.google.firebase.database.getValue
 
@@ -29,6 +28,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity,value,
                     Toast.LENGTH_SHORT).show()
             }
+
 
             override fun onCancelled(error: DatabaseError) {
                 Log.e(TAG,"Reading data is Failded", error.toException())
